@@ -1,0 +1,56 @@
+@use 'colors';
+
+#container {
+    min-height: calc(100vh - 50px);
+
+    #content {
+        h2 {
+            text-align: center;
+        }
+
+        & > h3 {
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+
+            a {
+                display: block;
+                margin-bottom: 2%;
+                border-radius: 15px;
+                width: 49%;
+                background-color: colors.$foreground-light;
+
+                img {
+                    transition: object-position 0.7s;
+                    border-radius: 15px;
+                    width: 100%;
+                    aspect-ratio: 16 / 9;
+                    object-fit: cover;
+                    object-position: top;
+
+                    &.website-logo {
+                        object-fit: contain;
+                        object-position: unset !important;
+                        background-color: #fff;
+                    }
+                }
+
+                &:hover img {
+                    object-position: bottom;
+                }
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: colors.$foreground;
+}
