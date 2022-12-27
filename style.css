@@ -20,12 +20,13 @@
   margin-bottom: 2%;
   border-radius: 15px;
   width: 49%;
-  background-color: #d2d2d2;
+  background-color: #F8F8F8;
 }
 #container #content .gallery a img {
   transition: object-position 0.7s;
-  border-radius: 15px;
-  width: 100%;
+  margin: 5px 5px 0;
+  border-radius: 12px;
+  width: calc(100% - 10px);
   aspect-ratio: 16/9;
   object-fit: cover;
   object-position: top;
@@ -37,6 +38,11 @@
 }
 #container #content .gallery a:hover img {
   object-position: bottom;
+}
+@media (max-width: 1200px) {
+  #container #content .gallery, #container #content h3 {
+    margin-inline: 10px;
+  }
 }
 
 a {
