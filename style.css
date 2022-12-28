@@ -36,6 +36,9 @@
   object-position: unset !important;
   background-color: #fff;
 }
+#container #content .gallery a h3, #container #content .gallery a p {
+  margin-inline: 10px;
+}
 #container #content .gallery a:hover img {
   object-position: bottom;
 }
