@@ -57,6 +57,11 @@ header {
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1019607843), 0 5px 10px rgba(0, 0, 0, 0.0745098039);
   text-align: center;
 }
+header .warning {
+  display: block;
+  padding-block: 12px;
+  background-color: #fdf24d;
+}
 header h3 {
   margin: unset;
   padding-block: 20px;
