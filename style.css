@@ -5,8 +5,9 @@
   text-align: center;
 }
 #container #content > h3 {
-  margin: auto;
+  margin: 8px auto;
   max-width: 1200px;
+  padding-left: 5px;
 }
 #container #content .gallery {
   display: flex;
@@ -71,6 +72,9 @@ footer {
   border-top: 1px solid #d2d2d2;
   padding-block: 15px;
   text-align: center;
+}
+footer a {
+  margin-inline: 8px;
 }
 
 body {

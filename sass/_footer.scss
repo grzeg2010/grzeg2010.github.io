@@ -4,4 +4,8 @@ footer {
     border-top: 1px solid colors.$foreground-light;
     padding-block: 15px;
     text-align: center;
+
+    a {
+        margin-inline: 8px;
+    }
 }
